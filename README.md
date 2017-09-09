@@ -11,7 +11,7 @@ A library to encode and decode knx datapoint types as described in the KNX Speci
 So far not all but the most common datapoint types are supported.  
 The supported datapoint types are documented in the [dpt overview table](docs/DPTS).
 
-[Changelog](changelog)
+[Changelog](CHANGELOG)
 
 ## Usage
 
