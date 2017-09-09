@@ -20,7 +20,7 @@ npm install --save knx-datapoints
 ```
 
 ```javascript
-const knxDatapoints = require('knx-datapoint');
+const knxDatapoints = require('knx-datapoints');
 
 // Encode a value
 knxDatapoints.encode('1.001', true); // Buffer<01>
