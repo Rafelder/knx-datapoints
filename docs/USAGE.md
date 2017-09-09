@@ -41,6 +41,8 @@ Please read the official knx datapoint documentation for detailed information.
 
 This is only a explanation of the API of this library.
 
+For more examples take a look at the [tests](../tests)
+
 ## DPT 1
 
 ||Input|Output|
