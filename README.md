@@ -9,9 +9,9 @@
 A library to encode and decode knx datapoint types as described in the KNX Specifications v2.1
 
 So far not all but the most common datapoint types are supported.  
-The supported datapoint types are documented in the [dpt overview table](docs/DPTS).
+The supported datapoint types are documented in the [dpt overview table](docs/DPTS.md).
 
-[Changelog](CHANGELOG)
+[Changelog](CHANGELOG.md)
 
 ## Usage
 
@@ -37,7 +37,7 @@ knxDatapoints.isSupported('1.001') // true
 knxDatapoints.isSupported('241.800') // false
 ```
 
-You can read further information in the [usage documentation](docs/USAGE)
+You can read further information in the [usage documentation](docs/USAGE.md)
 
 ## Contribute
 
