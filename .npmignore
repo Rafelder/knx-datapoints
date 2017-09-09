@@ -1,0 +1,6 @@
+.vscode
+coverage
+.editorConfig
+.eslintrc
+.gitignore
+istanbul.yml

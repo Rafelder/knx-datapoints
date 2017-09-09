@@ -1,0 +1,43 @@
+{
+  "author": "Timo Müller",
+  "bugs": {
+    "url": "https://github.com/Rafelder/knx-datapoints/issues"
+  },
+  "description": "Decode and encode knx datapoint according to the knx datapoint types standard 2.1",
+  "devDependencies": {
+    "istanbul": "0.4.5",
+    "mocha": "3.5.0",
+    "range": "0.0.3",
+    "standard": "10.0.3"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/Rafelder/knx-datapoints#readme",
+  "keywords": [
+    "knx",
+    "dpt",
+    "datapoint",
+    "home-automation"
+  ],
+  "license": "MIT",
+  "main": "./lib/dpt.js",
+  "name": "knx-datapoints",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafelder/knx-datapoints.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u tdd ./tests/*",
+    "lint": "standard ./lib/**/*.js ./knx-datapoints.js ./tests/**/*.js",
+    "test": "mocha -u tdd ./tests/*"
+  },
+  "standard": {
+    "env": [
+      "node",
+      "mocha"
+    ]
+  },
+  "version": "1.0.0",
+  "dependencies": {}
+}
