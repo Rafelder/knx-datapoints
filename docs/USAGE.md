@@ -2,7 +2,6 @@
 
 ## Check if a dpt is valid with `isValid(dpt)`
 ```js
-// 
 knxDatapoints.isValid('1.001') // true
 knxDatapoints.isValid('255.000') // false
 ```
@@ -168,11 +167,11 @@ knxDatapoints.decode('9.027', Buffer.from('AC00', 'hex'), { decimals: 1 }) // -3
 
 ||Input|Output|
 |---|---|---|
-|**encode**|`{ date?: Date, dayOfWeek?: number|null }`|Buffer (3 bytes)|
-|**decode**|Buffer (3 bytes)|`{ date: Date, dayOfWeek: number|null }`|
+|**encode**|`{ date?: Date, dayOfWeek?: number or null }`|Buffer (3 bytes)|
+|**decode**|Buffer (3 bytes)|`{ date: Date, dayOfWeek: number or null }`|
 
-**NOTE** dayOfWeek: null = not defined, 0 = sunday
-**NOTE** Only the time part of Date is used
+**NOTE:** dayOfWeek: null = not defined, 0 = sunday  
+**NOTE:** only the time part of Date is used
 
 ```js
 knxDatapoints.encode('10.001', { date: new Date(2016, 1, 1, 6, 30, 0), dayOfWeek: 3 }) // Buffer[661E00]
@@ -187,7 +186,7 @@ knxDatapoints.decode('10.001', Buffer.from('661E00', 'hex')) // { date: Date<201
 |**encode**|`Date`|Buffer (3 bytes)|
 |**decode**|Buffer (3 bytes)|`Date`|
 
-**NOTE** Only the date part of Date is used
+**NOTE:** only the date part of Date is used
 
 ```js
 knxDatapoints.encode('11.001', { date: new Date(1990, 1, 1), dayOfWeek: 3 }) // Buffer[01015A]

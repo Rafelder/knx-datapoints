@@ -20,13 +20,13 @@ npm install --save knx-datapoints
 ```
 
 ```javascript
-const knxDatapoints = require('knx-datapoints');
+const knxDatapoints = require('knx-datapoints')
 
 // Encode a value
-knxDatapoints.encode('1.001', true); // Buffer<01>
+knxDatapoints.encode('1.001', true) // Buffer[01]
 
 // Decode a buffer
-knxDatapoints.decode('1.001', Buffer.from('01', 'hex')); // true
+knxDatapoints.decode('1.001', Buffer.from('01', 'hex')) // true
 
 // Check if a dpt is valid
 knxDatapoints.isValid('1.001') // true
@@ -37,7 +37,7 @@ knxDatapoints.isSupported('1.001') // true
 knxDatapoints.isSupported('241.800') // false
 ```
 
-You can read further information in the [usage documentation](docs/USAGE.md)
+You can read further information in the [usage documentation](docs/USAGE.md).
 
 ## Contribute
 
