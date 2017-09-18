@@ -6,7 +6,7 @@
   "description": "Decode and encode knx datapoint according to the knx datapoint types standard 2.1",
   "devDependencies": {
     "istanbul": "0.4.5",
-    "mocha": "3.5.0",
+    "mocha": "3.5.3",
     "range": "0.0.3",
     "standard": "10.0.3"
   },
