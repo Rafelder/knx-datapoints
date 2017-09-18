@@ -24,7 +24,7 @@ suite('dptLib', () => {
     assert.strictEqual(knxDatapoints.isDptSupported('99.999'), false)
 
     // Valid dpt, but not supported
-    assert.strictEqual(knxDatapoints.isDptSupported('20.001'), false)
+    assert.strictEqual(knxDatapoints.isDptSupported('241.800'), false)
   })
   test('isDptValid', () => {
     // Everthing fine
@@ -40,7 +40,7 @@ suite('dptLib', () => {
     assert.strictEqual(knxDatapoints.isDptValid('99.999'), false)
 
     // Valid dpt, but not supported
-    assert.strictEqual(knxDatapoints.isDptValid('20.001'), true)
+    assert.strictEqual(knxDatapoints.isDptValid('241.800'), true)
   })
 
   test('encode invalid', () => {
@@ -54,10 +54,10 @@ suite('dptLib', () => {
   })
 
   test('encode unsupported', () => {
-    assert.throws(() => { knxDatapoints.encode('20.001') }, 'Unsupported datapoint type 20.001')
+    assert.throws(() => { knxDatapoints.encode('241.800') }, 'Unsupported datapoint type 241.800')
   })
 
   test('decode unsupported', () => {
-    assert.throws(() => { knxDatapoints.decode('20.001') }, 'Unsupported datapoint type 20.001')
+    assert.throws(() => { knxDatapoints.decode('241.800') }, 'Unsupported datapoint type 241.800')
   })
 })

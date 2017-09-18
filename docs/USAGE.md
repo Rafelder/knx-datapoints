@@ -304,6 +304,19 @@ knxDatapoints.encode('18.001', { year: 2017, month: 1, dayOfMonth: 4, dayOfWeek:
 knxDatapoints.decode('19.001', Buffer.from('750204d0041e0000', 'hex')) // { year: 2017, month: 1, dayOfMonth: 4, dayOfWeek: 6, hourOfDay: 16, minutes: 4, seconds: 30, f: false, wd: false, nwd: false, ny: false, nd: false, ndow: false, nt: false, suti: false, clq: false }
 ```
 
+## DPT 20
+
+||Input|Output|
+|---|---|---|
+|**encode**|`number`|Buffer (1 byte)|
+|**decode**|Buffer (1 byte)|`number`|
+
+```js
+knxDatapoints.encode('20.102', 1) // Buffer[01]
+
+knxDatapoints.decode('20.102', Buffer.from('B01', 'hex')) // 1
+```
+
 ## DPT 24
 
 ||Input|Output|
