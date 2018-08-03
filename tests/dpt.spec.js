@@ -44,20 +44,20 @@ suite('dptLib', () => {
   })
 
   test('encode invalid', () => {
-    assert.throws(() => { knxDatapoints.encode('1.999') }, 'Invalid datapoint type 1.999')
-    assert.throws(() => { knxDatapoints.encode('99.999') }, 'Invalid datapoint type 99.999')
+    assert.throws(() => { knxDatapoints.encode('1.999') }, Error, 'Invalid datapoint type 1.999')
+    assert.throws(() => { knxDatapoints.encode('99.999') }, Error, 'Invalid datapoint type 99.999')
   })
 
   test('decode invalid', () => {
-    assert.throws(() => { knxDatapoints.decode('1.999') }, 'Invalid datapoint type 1.999')
-    assert.throws(() => { knxDatapoints.decode('99.999') }, 'Invalid datapoint type 99.999')
+    assert.throws(() => { knxDatapoints.decode('1.999') }, Error, 'Invalid datapoint type 1.999')
+    assert.throws(() => { knxDatapoints.decode('99.999') }, Error, 'Invalid datapoint type 99.999')
   })
 
   test('encode unsupported', () => {
-    assert.throws(() => { knxDatapoints.encode('241.800') }, 'Unsupported datapoint type 241.800')
+    assert.throws(() => { knxDatapoints.encode('241.800') }, Error, 'Unsupported datapoint type 241.800')
   })
 
   test('decode unsupported', () => {
-    assert.throws(() => { knxDatapoints.decode('241.800') }, 'Unsupported datapoint type 241.800')
+    assert.throws(() => { knxDatapoints.decode('241.800') }, Error, 'Unsupported datapoint type 241.800')
   })
 })
