@@ -299,7 +299,7 @@ knxDatapoints.decode('18.001', Buffer.from('BF', 'hex')) // { control: true, sce
 |**decode**|Buffer (8 byte)|`{ year: number, month: number, dayOfMonth: number, dayOfWeek: number, hourOfDay: number, minutes: number, seconds: number, f: boolean, wd: boolean, nwd: boolean, ny: boolean, nd: boolean, ndow: boolean, nt: boolean, suti: boolean, clq: boolean }`|
 
 ```js
-knxDatapoints.encode('18.001', { year: 2017, month: 1, dayOfMonth: 4, dayOfWeek: 6, hourOfDay: 16, minutes: 4, seconds: 30, f: false, wd: false, nwd: false, ny: false, nd: false, ndow: false, nt: false, suti: false, clq: false }) // Buffer[750204d0041e0000]
+knxDatapoints.encode('19.001', { year: 2017, month: 1, dayOfMonth: 4, dayOfWeek: 6, hourOfDay: 16, minutes: 4, seconds: 30, f: false, wd: false, nwd: false, ny: false, nd: false, ndow: false, nt: false, suti: false, clq: false }) // Buffer[750204d0041e0000]
 
 knxDatapoints.decode('19.001', Buffer.from('750204d0041e0000', 'hex')) // { year: 2017, month: 1, dayOfMonth: 4, dayOfWeek: 6, hourOfDay: 16, minutes: 4, seconds: 30, f: false, wd: false, nwd: false, ny: false, nd: false, ndow: false, nt: false, suti: false, clq: false }
 ```
