@@ -118,9 +118,9 @@ knxDatapoints.decode('5.001', Buffer.from('64', 'hex'), { decimals: 3 }) // 39.2
 |**decode**|Buffer (1 byte)|`number`|
 
 ```js
-knxDatapoints.encode('6.001', 72) // Buffer[C8]
+knxDatapoints.encode('6.001', 72) // Buffer[48]
 
-knxDatapoints.decode('6.001', Buffer.from('C8', 'hex')) // 72
+knxDatapoints.decode('6.001', Buffer.from('48', 'hex')) // 72
 ```
 
 ## DPT 7
@@ -144,9 +144,9 @@ knxDatapoints.decode('7.001', Buffer.from('6464', 'hex')) // 25700
 |**decode**|Buffer (2 bytes)|`number`|
 
 ```js
-knxDatapoints.encode('8.001', -7068) // Buffer[6464]
+knxDatapoints.encode('8.001', -7068) // Buffer[E464]
 
-knxDatapoints.decode('8.001', Buffer.from('6464', 'hex')) // -7068
+knxDatapoints.decode('8.001', Buffer.from('E464', 'hex')) // -7068
 ```
 
 ## DPT 9
@@ -215,9 +215,9 @@ knxDatapoints.decode('12.001', Buffer.from('FFFFFFFF', 'hex')) // 4294967295
 |**decode**|Buffer (4 bytes)|`number`|
 
 ```js
-knxDatapoints.encode('13.001', -2147483648) // Buffer[00000000]
+knxDatapoints.encode('13.001', 10) // Buffer[0000000A]
 
-knxDatapoints.decode('13.001', Buffer.from('00000000', 'hex')) // -2147483648
+knxDatapoints.decode('13.001', Buffer.from('0000000A', 'hex')) // 10
 ```
 
 ## DPT 14
