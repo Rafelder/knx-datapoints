@@ -3,6 +3,12 @@
   "bugs": {
     "url": "https://github.com/Rafelder/knx-datapoints/issues"
   },
+  "contributors": [
+    {
+      "name": "Bram Roelandts",
+      "url": "https://roelandts.cc/"
+    }
+  ],
   "description": "Decode and encode knx datapoint according to the knx datapoint types standard 2.1",
   "devDependencies": {
     "istanbul": "0.4.5",
