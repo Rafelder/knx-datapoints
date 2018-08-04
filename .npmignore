@@ -1,6 +1,7 @@
 .vscode
 coverage
 .editorConfig
-.eslintrc
 .gitignore
+.travis.yml
 istanbul.yml
+TODO.txt
