@@ -14,7 +14,9 @@
     "istanbul": "0.4.5",
     "mocha": "3.5.3",
     "range": "0.0.3",
-    "standard": "10.0.3"
+    "standard": "10.0.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "engines": {
     "node": ">=6.0.0"

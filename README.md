@@ -57,6 +57,9 @@ npm run lint
 
 # check coverage
 npm run coverage
+
+# create webpack bundle
+npx webpack --config webpack.config.js
 ```
 
 ## License

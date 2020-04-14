@@ -60,3 +60,4 @@ typings/
 
 # IDE
 .vscode
+dist/knx-datapoints.js
