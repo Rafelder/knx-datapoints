@@ -179,7 +179,7 @@ knxDatapoints.encode('10.001', { date: new Date(2016, 1, 1, 6, 30, 0), dayOfWeek
 knxDatapoints.decode('10.001', Buffer.from('661E00', 'hex')) // { date: Date<2017-02-01, 06:30:00>, dayOfWeek: 3 }
 ```
 
-## DPT 11 3
+## DPT 11
 
 ||Input|Output|
 |---|---|---|
