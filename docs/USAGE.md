@@ -189,9 +189,9 @@ knxDatapoints.decode('10.001', Buffer.from('661E00', 'hex')) // { date: Date<201
 **NOTE:** only the date part of Date is used
 
 ```js
-knxDatapoints.encode('11.001', { date: new Date(1990, 1, 1), dayOfWeek: 3 }) // Buffer[01015A]
+knxDatapoints.encode('11.001', { date: new Date(1990, 0, 1), dayOfWeek: 3 }) // Buffer[01015A]
 
-knxDatapoints.decode('11.001', Buffer.from('01015A', 'hex')) // Date<1990-02-01>
+knxDatapoints.decode('11.001', Buffer.from('01015A', 'hex')) // Date<1990-01-01>
 ```
 
 ## DPT 12
