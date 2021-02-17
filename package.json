@@ -12,9 +12,10 @@
   "description": "Decode and encode knx datapoint according to the knx datapoint types standard 2.1",
   "devDependencies": {
     "istanbul": "0.4.5",
-    "mocha": "3.5.3",
+    "mocha": "8.3.0",
     "range": "0.0.3",
-    "standard": "10.0.3"
+    "snazzy": "9.0.0",
+    "standard": "16.0.3"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u tdd ./tests/*",
-    "lint": "standard ./lib/**/*.js ./knx-datapoints.js ./tests/**/*.js",
+    "lint": "standard ./lib/**/*.js ./tests/**/*.js --verbose | snazzy",
     "test": "mocha -u tdd ./tests/*"
   },
   "standard": {

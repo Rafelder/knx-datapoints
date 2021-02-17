@@ -5,7 +5,6 @@
 [![NPM downloads total][npm-downloads-total-image]][npm-url]
 [![MIT License][license-image]][license-url]
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Build Status](https://travis-ci.org/Rafelder/knx-datapoints.svg?branch=master)](https://travis-ci.org/Rafelder/knx-datapoints)
 
 A library to encode and decode knx datapoint types as described in the KNX Specifications v2.1
 

@@ -2,6 +2,5 @@
 coverage
 .editorConfig
 .gitignore
-.travis.yml
 istanbul.yml
 TODO.txt
