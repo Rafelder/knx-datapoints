@@ -2,5 +2,5 @@
 coverage
 .editorConfig
 .gitignore
-istanbul.yml
+.c8rc.json
 TODO.txt

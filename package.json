@@ -11,14 +11,13 @@
   ],
   "description": "Decode and encode knx datapoint according to the knx datapoint types standard 2.1",
   "devDependencies": {
-    "istanbul": "0.4.5",
-    "mocha": "8.3.0",
-    "range": "0.0.3",
-    "snazzy": "9.0.0",
-    "standard": "16.0.3"
+    "c8": "^11.0.0",
+    "mocha": "^11.7.4",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.2"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=20.0.0"
   },
   "homepage": "https://github.com/Rafelder/knx-datapoints#readme",
   "keywords": [
@@ -35,7 +34,7 @@
     "url": "git+https://github.com/Rafelder/knx-datapoints.git"
   },
   "scripts": {
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u tdd ./tests/*",
+    "coverage": "c8 mocha -u tdd ./tests/*",
     "lint": "standard ./lib/**/*.js ./tests/**/*.js --verbose | snazzy",
     "test": "mocha -u tdd ./tests/*"
   },
@@ -46,5 +45,9 @@
     ]
   },
   "version": "1.1.2",
+  "overrides": {
+    "serialize-javascript": "^7.0.7",
+    "diff": "^8.0.2"
+  },
   "dependencies": {}
 }

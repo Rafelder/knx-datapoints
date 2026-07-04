@@ -1,6 +1,8 @@
 const assert = require('assert')
-const range = require('range').range
 const knxDatapoints = require('../')
+
+// Half-open integer range [start, stop), replacing the deprecated 'range' package
+const range = (start, stop) => Array.from({ length: stop - start }, (_, i) => start + i)
 
 suite('dpt3', () => {
   test('decode', () => {
